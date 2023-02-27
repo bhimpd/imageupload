@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>registeration form</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-image: url(background.jpg);
+    }
+</style>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center text-align-center" style="margin:60px auto;">
+
+
+        <!-- form started -->
+        <form action="connect.php" enctype="multipart/form-data" method="post" style="margin:20px auto;padding: 20px;
+        box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.3), 0 0 0 2px rgb(255, 255, 255),
+          0.3em 0.3em 1em rgba(0, 0, 0, 0.3);">
+            <!-- form heading -->
+            <div class="head d-flex justify-content-center align-items-center text-align-center">
+                <h2 style="color:whitesmoke">S.A.I.T Registeration </h2>
+            </div>
+            <!-- form heading completed -->
+
+
+            <!-- name and address -->
+            <div class="row" style="margin:20px;">
+                <div class="col">
+                    <input type="text" name="name" class="form-control" placeholder="Enter Your Name" aria-label="name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" name="address" placeholder="Enter your Address" aria-label="name">
+                </div>
+            </div>
+            <!-- name and address completed -->
+
+
+            <!-- gmail and number -->
+            <div class="row" style="margin:20px;">
+                <div class="col">
+                    <input type="email" name="email" class="form-control" placeholder="Enter your Gmail" aria-label="gmail">
+                </div>
+                <div class="col">
+                    <input type="number" name="number" class="form-control" placeholder="Enter Your Number" aria-label="number">
+                </div>
+            </div>
+            <!-- gmail and number completed -->
+
+
+            <!-- radio button for gender -->
+            <div class="form-check" style="margin:20px;">
+                <input class="form-check-input" type="radio" name="gender" value="MALE" id="flexRadioDefault1" checked>Male
+
+            </div>
+            <div class="form-check" style="margin:20px;">
+                <input class="form-check-input" type="radio" name="gender" value="FEMALE" id="flexRadioDefault2">Female
+
+            </div>
+            <!-- radio button for gender completed -->
+
+
+            <!-- image input tag -->
+            <div class="row" style="margin:20px;">
+                <div class="col">
+                    <input type="file" class="form-control" name="image" id="image">
+                </div>
+            </div>
+            <!-- image tag completed -->
+
+
+            <!-- register button -->
+            <div class="row justify-content-center align-items-center text-align-center " style="margin:20px; ">
+                <div class="col col-md-6 ">
+                    <button type="submit" name="submit" class="btn btn-success ">Register Now</button>
+                </div>
+            </div>
+            <!-- register button completed -->
+        </form>
+    </div>
+</body>
+
+</html>
